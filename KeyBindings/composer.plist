@@ -1,0 +1,4 @@
+{
+	"@D"	= "sendAndArchiveParent:";
+	// "@N" = ( "reply:", "insertFormatString:", "Hi ${from.name.first},\n\n");
+}

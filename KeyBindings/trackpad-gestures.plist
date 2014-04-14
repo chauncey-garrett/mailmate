@@ -1,0 +1,15 @@
+{
+	//
+	// Trackpad Gestures
+	//
+
+	"→"  = "nextMessage:";
+	"←"  = "previousMessage:";
+	"↑"  = "previousThread:";
+	"↓"  = "nextThread:";
+	"^→" = "nextUnreadMessage:";
+	"^←" = "previousUnreadMessage:";
+	"^↑" = "previousUnreadThread:";
+	"^↓" = "nextUnreadThread:";
+}
+
