@@ -28,4 +28,5 @@ The keybindings in this file are, for the most part, identical to those included
 | /        | will search all messages                               |
 | u        | will go to the inbox                                   |
 | #        | will delete the current message                        |
+| ⌘⇧F      | will forward message as an attachment                  |
 []

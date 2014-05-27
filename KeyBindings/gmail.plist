@@ -22,6 +22,7 @@
 	"r"    = "reply:";
 	"a"    = "replyAll:";
 	"f"    = "forwardMessage:";
+	"@F"   = "forwardAsAttachment:"; // Added b/c MailMate doesn't yet work well with HTML messages w/o embedded text
 	"^s"   = "saveDocument:";
 	// l Label
 	"v" = "moveToMailbox:";
