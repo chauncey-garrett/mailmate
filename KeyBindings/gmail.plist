@@ -15,6 +15,7 @@
 	"n"    = "selectNextMailboxRow:";
 	"o"    = "openMessages:"; // Gmail: Also expands or collapses a message if you are in 'Conversation View.'
 	"e"    = "archive:";
+    "E"    = ("moveThreadToMailbox:", "archive"); // archive the entire thread
 	"#"    = "deleteMessage:";
 	"m"    = ( "toggleMuteState:", "archive:" ); // FIXME: Should be 'markAsMuted:'
 	"s"    = "toggleFlag:";
