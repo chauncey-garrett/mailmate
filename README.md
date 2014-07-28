@@ -1,5 +1,11 @@
 # MailMate Customizations
 
+## Mailbox Layouts
+
+`correspondence arc.plist` and `correspondence arc (bottom).plist` combine the "Correspondence" view with the "Thread Arcs" view. The bottom view—which I prefer—places the message list on the bottom and the current email message on top. I find this more useful because I spend most of my time viewing the current message than looking for the next one.
+
+![](delete-me/correspondence-arc-bottom-view.png)
+
 ## Keybindings
 
 | File | Description |
@@ -24,10 +30,17 @@ The keybindings in this file are, for the most part, identical to those included
 | j/k      | will move between all messages (instead of threads)    |
 | n/p      | will move between mailboxes (which I find more useful) |
 | gg       | will move you to the top of the list (Vim-style)       |
-| G        | will move you to the bottom (Vim-style)                |
+| ⇧G       | will move you to the bottom (Vim-style)                |
 | /        | will search all messages                               |
 | u        | will go to the inbox                                   |
 | #        | will delete the current message                        |
 | ⌘⇧F      | will forward message as an attachment                  |
 | ⇧E       | will archive all messages in the current thread        |
 []
+
+## Installation
+
+Mailmate user customizations are stored in `~/Library/Application Support/MailMate/Resources`. If you don't have any customizations, I'll suggest doing this:
+
+	mkdir -p "$HOME/Library/Application Support/MailMate/Resources"
+	git clone https://github.com/chauncey-garrett/mailmate.git "$HOME/Library/Application Support/MailMate/Resources"
