@@ -13,7 +13,6 @@
 | `composer.plist` | Shortcuts for the email composition window |
 | `gmail.plist` | Gmail style shortcuts in the main viewer window |
 | `trackpad-gestures.plist` | Trackpad gestures as outlined in the manual |
-[]
 
 These are fairly self-explanatory if you look through the `plist` files. They should be placed in
 
@@ -36,7 +35,6 @@ The keybindings in this file are, for the most part, identical to those included
 | #        | will delete the current message                        |
 | ⌘⇧F      | will forward message as an attachment                  |
 | ⇧E       | will archive all messages in the current thread        |
-[]
 
 ## Installation
 
