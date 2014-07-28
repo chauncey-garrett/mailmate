@@ -42,3 +42,16 @@ Mailmate user customizations are stored in `~/Library/Application Support/MailMa
 
 	mkdir -p "$HOME/Library/Application Support/MailMate/Resources"
 	git clone https://github.com/chauncey-garrett/mailmate.git "$HOME/Library/Application Support/MailMate/Resources"
+
+## Like it?
+
+Add it to your toolbox; If not, open an [issue!][issue_tracker]
+
+## Author(s)
+
+*The author(s) of this module should be contacted via the [issue tracker][issue_tracker].*
+
+  - [Chauncey Garrett][chauncey-garrett]
+
+[issue_tracker]:     https://github.com/chauncey-garrett/mailmate/issues     "chauncey-garrett/mailmate/issues"
+[chauncey-garrett]:  https://github.com/chauncey-garrett                   "chauncey-garrett"
