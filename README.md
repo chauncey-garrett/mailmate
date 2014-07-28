@@ -4,7 +4,7 @@
 
 `correspondence arc.plist` and `correspondence arc (bottom).plist` combine the "Correspondence" view with the "Thread Arcs" view. The bottom view—which I prefer—places the message list on the bottom and the current email message on top. I find this more useful because I spend most of my time viewing the current message than looking for the next one.
 
-![](delete-me/correspondence-arc-bottom-view.png)
+![](delete-me/correspondence-arc.png)
 
 ## Keybindings
 
