@@ -27,7 +27,7 @@
 	"^s"   = "saveDocument:";
 	// l Label
 	"v" = "moveToMailbox:";
-	"u" = ( "goToMailbox:", "INBOX" );
+	"u" = ( "goToMailbox:", "0CE5FC71-F7DC-4D08-842D-0556FA57CDB9" ); // Goto smart mailbox, Unread. Obtain the UUID from  ~/Library/Application Support/MailMate/Mailboxes.plist
 
 	"I"	= "toggleReadState:"; // FIXME: Should be ( "markAsRead:", "nextMessage:");
 	"U"	= "toggleReadState:"; // FIXME: Should be "markAsUnRead:"
