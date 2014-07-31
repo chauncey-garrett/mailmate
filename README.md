@@ -13,7 +13,6 @@
 | `composer.plist` | Shortcuts for the email composition window |
 | `gmail.plist` | Gmail style shortcuts in the main viewer window |
 | `trackpad-gestures.plist` | Trackpad gestures as outlined in the manual |
-[]
 
 These are fairly self-explanatory if you look through the `plist` files. They should be placed in
 
@@ -36,7 +35,6 @@ The keybindings in this file are, for the most part, identical to those included
 | #        | will delete the current message                        |
 | ⌘⇧F      | will forward message as an attachment                  |
 | ⇧E       | will archive all messages in the current thread        |
-[]
 
 ## Installation
 
@@ -44,3 +42,16 @@ Mailmate user customizations are stored in `~/Library/Application Support/MailMa
 
 	mkdir -p "$HOME/Library/Application Support/MailMate/Resources"
 	git clone https://github.com/chauncey-garrett/mailmate.git "$HOME/Library/Application Support/MailMate/Resources"
+
+## Like it?
+
+Add it to your toolbox; If not, open an [issue!][issue_tracker]
+
+## Author(s)
+
+*The author(s) of this module should be contacted via the [issue tracker][issue_tracker].*
+
+  - [Chauncey Garrett][chauncey-garrett]
+
+[issue_tracker]:     https://github.com/chauncey-garrett/mailmate/issues     "chauncey-garrett/mailmate/issues"
+[chauncey-garrett]:  https://github.com/chauncey-garrett                   "chauncey-garrett"
