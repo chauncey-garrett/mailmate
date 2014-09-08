@@ -1,70 +1,70 @@
 {
-        //
-        // Gmail defaults from MailMate (plus my customizations)
-        //
+	//
+	// Gmail defaults from MailMate (plus my customizations)
+	//
 
-        // Based on: http://mail.google.com/support/bin/answer.py?answer=6594
+	// Based on: http://mail.google.com/support/bin/answer.py?answer=6594
 
-        "c"    = "newMessage:";
-        "/"    = "mailboxSearch:";
-        "j"    = "nextMessage:";
-        "k"    = "previousMessage:";
-        /* "j" = "nextThread:"; */
-        /* "k" = "previousThread:"; */
-        "p"    = "selectPreviousMailboxRow:";
-        "n"    = "selectNextMailboxRow:";
-        "o"    = "openMessages:"; // Gmail: Also expands or collapses a message if you are in 'Conversation View.'
-        "e"    = "archive:";
+	"c"    = "newMessage:";
+	"/"    = "mailboxSearch:";
+	"j"    = "nextMessage:";
+	"k"    = "previousMessage:";
+	/* "j" = "nextThread:"; */
+	/* "k" = "previousThread:"; */
+	"p"    = "selectPreviousMailboxRow:";
+	"n"    = "selectNextMailboxRow:";
+	"o"    = "openMessages:"; // Gmail: Also expands or collapses a message if you are in 'Conversation View.'
+	"e"    = "archive:";
     "E"    = ("moveThreadToMailbox:", "archive"); // archive the entire thread
-        "#"    = "deleteMessage:";
-        "m"    = ( "toggleMuteState:", "archive:" ); // FIXME: Should be 'markAsMuted:'
-        "s"    = "toggleFlag:";
-        "!"    = "moveToJunk:";
-        "r"    = ( "reply:", "insertFormatString:", "${to.name.first},\n\n");
-        /* "r"    = "reply:"; */
-        "a"    = "replyAll:";
-        "f"    = "forwardMessage:";
-        "@F"   = "forwardAsAttachment:"; // Added b/c MailMate doesn't yet work well with HTML messages w/o embedded text
-        "^s"   = "saveDocument:";
-        // l Label
-        "v" = "moveToMailbox:";
-        "u" = ( "goToMailbox:", "0CE5FC71-F7DC-4D08-842D-0556FA57CDB9" ); // Goto smart mailbox, Unread. Obtain the UUID from  ~/Library/Application Support/MailMate/Mailboxes.plist
+	"#"    = "deleteMessage:";
+	"m"    = ( "toggleMuteState:", "archive:" ); // FIXME: Should be 'markAsMuted:'
+	"s"    = "toggleFlag:";
+	"!"    = "moveToJunk:";
+	"r"    = ( "reply:", "insertFormatString:", "${to.name.first},\n\n");
+	/* "r"    = "reply:"; */
+	"a"    = "replyAll:";
+	"f"    = "forwardMessage:";
+	"@F"   = "forwardAsAttachment:"; // Added b/c MailMate doesn't yet work well with HTML messages w/o embedded text
+	"^s"   = "saveDocument:";
+	// l Label
+	"v" = "moveToMailbox:";
+	"u" = ( "goToMailbox:", "0CE5FC71-F7DC-4D08-842D-0556FA57CDB9" ); // Goto smart mailbox, Unread. Obtain the UUID from  ~/Library/Application Support/MailMate/Mailboxes.plist
 
-        "I"	= "toggleReadState:"; // FIXME: Should be ( "markAsRead:", "nextMessage:");
-        "U"	= "toggleReadState:"; // FIXME: Should be "markAsUnRead:"
+	"I"	= "toggleReadState:"; // FIXME: Should be ( "markAsRead:", "nextMessage:");
+	"U"	= "toggleReadState:"; // FIXME: Should be "markAsUnRead:"
 
-        "z"	= "undo:";
+	"z"	= "undo:";
 
-        // Only in MailMate
-        "N"	= "moveDownAndModifySelection:";
-        "P"	= "moveUpAndModifySelection:";
-        "J"	= "moveDownAndModifySelection:";
-        "K"	= "moveUpAndModifySelection:";
-        "Z"	= "redo:";
+	// Only in MailMate
+	"N"	= "moveDownAndModifySelection:";
+	"P"	= "moveUpAndModifySelection:";
+	"J"	= "moveDownAndModifySelection:";
+	"K"	= "moveUpAndModifySelection:";
+	"Z"	= "redo:";
 
-        "/"	= "searchAllMessages:";
+	"/"	= "searchAllMessages:";
 
-        // Combo keys
-        "g" = {
-                "a" = ( "goToMailbox:", "ALL_MESSAGES" );
-                "s" = ( "goToMailbox:", "FLAGGED" );
-                // g then c	Go to 'Contacts'	Takes you to your Contacts list.
-                "d" = ( "goToMailbox:", "DRAFTS" );
-                "g" = "selectFirstMessageRow:"; // gg, like in Vim
-                "l" = "goToMailbox:";
-                "i" = ( "goToMailbox:", "INBOX" );
-                "t" = ( "goToMailbox:", "SENT" );
-        };
-        "G" = "selectLastMessageRow:"; // G, like in Vim
+	// Combo keys
+	"g" = {
+		"a" = ( "goToMailbox:", "ALL_MESSAGES" );
+		"s" = ( "goToMailbox:", "FLAGGED" );
+		// g then c	Go to 'Contacts'	Takes you to your Contacts list.
+		"d" = ( "goToMailbox:", "DRAFTS" );
+		"g" = "selectFirstMessageRow:"; // gg, like in Vim
+		"l" = "goToMailbox:";
+		"i" = ( "goToMailbox:", "INBOX" );
+		"t" = ( "goToMailbox:", "SENT" );
+	};
+	"G" = "selectLastMessageRow:"; // G, like in Vim
 
-        "*" = {
-                "a" = "selectAll:";
-                "n" = "deselectAll:";
-                "r" = ( "selectWithFilter:", "#flags.flag = '\\Seen'"); // Selects all mail you've read.
-                "u" = ( "selectWithFilter:", "#flags.flag !=[x] '\\Seen'"); // Selects all unread mail.
-                "s" = ( "selectWithFilter:", "#flags.flag = '\\Flagged'"); // Selects all starred mail.
-                "t" = ( "selectWithFilter:", "#flags.flag !=[x] '\\Flagged'"); // Selects all unstarred mail.
-        };
+	"*" = {
+		"a" = "selectAll:";
+		"n" = "deselectAll:";
+		"r" = ( "selectWithFilter:", "#flags.flag = '\\Seen'"); // Selects all mail you've read.
+		"u" = ( "selectWithFilter:", "#flags.flag !=[x] '\\Seen'"); // Selects all unread mail.
+		"s" = ( "selectWithFilter:", "#flags.flag = '\\Flagged'"); // Selects all starred mail.
+		"t" = ( "selectWithFilter:", "#flags.flag !=[x] '\\Flagged'"); // Selects all unstarred mail.
+	};
 }
 
 /*
