@@ -19,7 +19,6 @@
 	"o"    = "openMessages:"; // Gmail: Also expands or collapses a message if you are in 'Conversation View.'
 	"e"    = "archive:";
     "E"    = ("moveThreadToMailbox:", "archive"); // archive the entire thread
-	"#"    = "deleteMessage:";
 	"m"    = ( "toggleMuteState:", "archive:" ); // FIXME: Should be 'markAsMuted:'
 	"s"    = "toggleFlag:";
 	"!"    = "moveToJunk:";
@@ -31,6 +30,7 @@
 	"^s"   = "saveDocument:";
 	// l Label
 	"v" = "moveToMailbox:";
+	"#"    = "deleteMessage:";
 	"u" = ( "goToMailbox:", "0CE5FC71-F7DC-4D08-842D-0556FA57CDB9" ); // Goto smart mailbox, Unread. Obtain the UUID from  ~/Library/Application Support/MailMate/Mailboxes.plist
 
 	"I"	= "toggleReadState:"; // FIXME: Should be ( "markAsRead:", "nextMessage:");
