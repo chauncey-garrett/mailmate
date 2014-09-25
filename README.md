@@ -26,17 +26,18 @@ NOTE: You may need to make the KeyBindings folder if you don't already have one.
 
 The keybindings in this file are, for the most part, identical to those included in MailMate. I have, however, included a couple of (IMHO) improvements:
 
-| Shortcut | Description                                            |
-| :---:    | :---                                                   |
-| j/k      | will move between all messages (instead of threads)    |
-| n/p      | will move between mailboxes (which I find more useful) |
-| gg       | will move you to the top of the list (Vim-style)       |
-| ⇧G       | will move you to the bottom (Vim-style)                |
-| /        | will search all messages                               |
-| u        | will go to the inbox                                   |
-| #        | will delete the current message                        |
-| ⌘⇧F      | will forward message as an attachment                  |
-| ⇧E       | will archive all messages in the current thread        |
+| Shortcut | Description
+| :---:    | :---
+| j/k      | move between all messages (instead of threads)
+| n/p      | move between mailboxes (which I find more useful)
+| gg       | move to the top of the list (Vim-style)
+| ⇧G       | move to the bottom (Vim-style)
+| /        | search all messages
+| u        | go to the inbox
+| #        | delete the current message
+| ⌘⇧F      | forward message as an attachment
+| ⇧E       | archive all messages in the current thread
+| ⌘↩       | send message
 
 ## Installation
 
