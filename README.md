@@ -48,9 +48,11 @@ Mailmate user customizations are stored in `~/Library/Application Support/MailMa
 
 ## Like it?
 
-Add it to your toolbox; If not, open an [issue!](https://github.com/chauncey-garrett/mailmate/issues "chauncey-garrett/mailmate/issues")
+Add it to your toolbox; if not, open an [issue!](https://github.com/chauncey-garrett/mailmate/issues "chauncey-garrett/mailmate/issues") I appreciate all feedback.
 
 ## Author(s)
+
+I specifically want to thank [Benny Kjær Nielsen](http://freron.com/about/index.html#about_me) for making this repository possible by producing [MailMate](http://freron.com), and for providing excellent customer support for when I have had questions about how to best make these customizations.
 
 *The author(s) of this module should be contacted via the [issue tracker](https://github.com/chauncey-garrett/mailmate/issues "chauncey-garrett/mailmate/issues").*
 
