@@ -2,9 +2,11 @@
 
 ## Mailbox Layouts
 
-`correspondence arc.plist` and `correspondence arc (bottom).plist` combine the "Correspondence" view with the "Thread Arcs" view. The bottom view—which I prefer—places the message list on the bottom and the current email message on top. I find this more useful because I spend most of my time viewing the current message than looking for the next one.
+The files `correspondence arc.plist` and `correspondence arc (bottom).plist` combine the *Correspondence* view with the *Thread Arcs* view. **Correspondence Arc** is designed more for a taller, more narrow, view, while **Correspondence Arc (Widescreen)** is designed for more for a widescreen layout. Additionally, in **Correspondence Arc** I hide the Messages sidebar and either use the Gmail shortcuts or ⌘T to access the *Go to Mailbox* feature.
 
-![](delete-me/correspondence-arc-bottom-view.png)
+![Correspondence Arc, with hidden sidebar](delete-me/correspondence-arc.png)
+
+![Correspondence Arc (Widescreen)](delete-me/correspondence-arc-widescreen.png)
 
 ## Keybindings
 
@@ -18,9 +20,9 @@ These are fairly self-explanatory if you look through the `plist` files. They sh
 
 	~/Library/Application Support/MailMate/Resources/KeyBindings
 
-NOTE: You may need to make the KeyBindings folder if you don't already have one.
+NOTE: You may need to make the KeyBindings folder if you don't already have one. See [installation](#installation) below.
 
-#### Some comments about gmail.plist
+#### Some comments about `gmail.plist`
 
 The keybindings in this file are, for the most part, identical to those included in MailMate. I have, however, included a couple of (IMHO) improvements:
 
@@ -45,13 +47,10 @@ Mailmate user customizations are stored in `~/Library/Application Support/MailMa
 
 ## Like it?
 
-Add it to your toolbox; If not, open an [issue!][issue_tracker]
+Add it to your toolbox; If not, open an [issue!](https://github.com/chauncey-garrett/mailmate/issues "chauncey-garrett/mailmate/issues")
 
 ## Author(s)
 
-*The author(s) of this module should be contacted via the [issue tracker][issue_tracker].*
+*The author(s) of this module should be contacted via the [issue tracker](https://github.com/chauncey-garrett/mailmate/issues "chauncey-garrett/mailmate/issues").*
 
-  - [Chauncey Garrett][chauncey-garrett]
-
-[issue_tracker]:     https://github.com/chauncey-garrett/mailmate/issues     "chauncey-garrett/mailmate/issues"
-[chauncey-garrett]:  https://github.com/chauncey-garrett                   "chauncey-garrett"
+  - [Chauncey Garrett](https://github.com/chauncey-garrett "chauncey-garrett")

@@ -7,6 +7,7 @@
 		children =
 		(
 			{
+				// Mailboxes sidebar
 				viewerType = "MmBoxView";
 				orientation = "vertical";
 				defaultSize = 200;
@@ -30,16 +31,19 @@
 				);
 			},
 			{
+				// Main window view
+				// Split the entire window vertically to separate sidebar from mailbox view
 				viewerType = "MmSplitView";
 				orientation = "vertical";
 				collapsibleSubview = 2; // Incomplete support -- no way to get it back (1 = first, 2 = last)
 				children =
 				(
 					{
+						// Top of main view
 						identifier = "pathOutlineBox";
 						viewerType = "MmBoxView";
 						orientation = "vertical";
-						defaultSize = 250;
+						defaultSize = 1000;
 						autoresize = 0;
 						children =
 						(
@@ -48,7 +52,9 @@
 								viewerType = "MmPathControlView";
 								sources = ( { sourceIdentifier = "mailboxesOutline"; } );
 							},
-							{	viewerType = "MmSeparatorView"; showWithViews = ( "pathControl" ); },
+							{
+								viewerType = "MmSeparatorView"; showWithViews = ( "pathControl" );
+							},
 							{
 								viewerType = "MmSplitView";
 								minHeight = 50;
@@ -56,65 +62,82 @@
 								children =
 								(
 									{
-										identifier = "mainOutline";
-										viewerType = "MmMessagesOutlineView";
-										// columnSettings = "outlineColumns";
-										sources = ( { sourceIdentifier = "pathControl"; } );
-										defaultSize = 350;
+										// Message list
+										viewerType = "MmBoxView";
+										orientation = "vertical";
+										defaultSize = 800;
+										minWidth = 500;
+										autoresize = 0;
+										children =
+										(
+											{
+												viewerType = "MmLabelView";
+												// TODO: Make label state current mailbox
+												label = "Messages";
+											},
+											{	viewerType = "MmSeparatorView"; },
+											{
+												identifier = "mainOutline";
+												viewerType = "MmMessagesOutlineView";
+												/* columnSettings = "outlineColumns"; */
+												sources = ( { sourceIdentifier = "pathControl"; } );
+											},
+										);
 									},
-									// {
-									// 	identifier = "locator";
-									// 	viewerType = "MmLocatorView";
-									// 	sources = ( { sourceIdentifier = "mainOutline"; } );
-									// 	canBecomeKeyView = 0; // Not implemented
-									// },
 									{
+										// Correspondence view
+										viewerType = "MmBoxView";
+										orientation = "vertical";
+										defaultSize = 300;
+										minWidth = 300;
+										autoresize = 0;
+										children =
+										(
+											{
+												viewerType = "MmLabelView";
+												label = "Correspondence";
+											},
+											{	viewerType = "MmSeparatorView"; },
+											{
+												identifier = "correspondenceOutline";
+												viewerType = "MmMessagesOutlineView";
+												minWidth = 100;
+												sources = ( { sourceIdentifier = "mainOutline"; } );
+												selectionSources = ( { sourceIdentifier = "mainOutline"; } );
+												// FIXME: The transformation does not work 'per' message, i.e., it tries to combine any 'from' with any 'to' in $mainOutline.
+												transformation = "$ALL_MESSAGES.filter((from.address = $mainOutline.from.address and #recipient.address = $mainOutline.#recipient.address) or (from.address = $mainOutline.#recipient.address and #recipient.address = $mainOutline.from.address))";
+												defaultColumns = ( "subject", "relativeDate" );
+												outlineColumn = "subject";
+											},
+										);
+										toggleMenuTitle = "Correspondence View";
+										toggleKeyEquivalent = "^~@c";
+									},
+									{
+										// Thread arcs view
 										viewerType = "MmThreadArcsView";
 										sources = ( { sourceIdentifier = "mainOutline"; } );
 										selectionSources = ( { sourceIdentifier = "mainOutline"; } );
 										transformation = "$ALL_MESSAGES.filter(#thread-id =[c] $mainOutline.#thread-id)";
-										defaultSize = 30;
-										minWidth = 30;
+										minWidth = 40;
+										defaultSize = 40;
 										orientation = "vertical";
+										toggleMenuTitle = "Thread Arc View";
+										toggleKeyEquivalent = "";
 									},
 								);
 							},
 						);
 					},
-					{
+										{
+						// Bottom of main view
+						// Split the main window horizontally to separate messages from message list
 						viewerType = "MmSplitView";
 						orientation = "horizontal";
 						children =
 						(
 							{
-								viewerType = "MmBoxView";
-								orientation = "vertical";
-								defaultSize = 200;
-								autoresize = 0;
-								children =
-								(
-									{
-										viewerType = "MmLabelView";
-										label = "Correspondence";
-									},
-									{	viewerType = "MmSeparatorView"; },
-									{
-										identifier = "correspondenceOutline";
-										viewerType = "MmMessagesOutlineView";
-										minWidth = 100;
-										sources = ( { sourceIdentifier = "mainOutline"; } );
-										selectionSources = ( { sourceIdentifier = "mainOutline"; } );
-										// FIXME: The transformation does not work 'per' message, i.e., it tries to combine any 'from' with any 'to' in $mainOutline.
-										transformation = "$ALL_MESSAGES.filter((from.address = $mainOutline.from.address and #recipient.address = $mainOutline.#recipient.address) or (from.address = $mainOutline.#recipient.address and #recipient.address = $mainOutline.from.address))";
-										defaultColumns = ( "subject", "relativeDate" );
-										outlineColumn = "subject";
-									},
-								);
-
-								toggleMenuTitle = "Correspondence View";
-								toggleKeyEquivalent = "^~@c";
-							},
-							{
+								// Email view
 								viewerType = "MmBoxView";
 								orientation = "vertical";
 								children =
@@ -160,14 +183,6 @@
 						toggleMenuTitle = "Message View";
 						toggleKeyEquivalent = "^~@h";
 					},
-					// {
-					// 	identifier = "messageEditor";
-					// 	viewerType = "MmMessageTextView";
-					// 	sources = ( { sourceIdentifier = "correspondenceOutline"; } );
-					// 	minimumNumberOfMessages = 1;
-					// 	maximumNumberOfMessages = 1;
-					// 	match = "$correspondenceOutline.filter(#flags.flag = '\\Draft')"; // Only match drafts
-					// },
 				);
 			},
 		);
