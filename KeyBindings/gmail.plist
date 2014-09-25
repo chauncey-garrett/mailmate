@@ -5,6 +5,9 @@
 
 	// Based on: http://mail.google.com/support/bin/answer.py?answer=6594
 
+	"@\U000A" = "send:"; // ⌘+return
+	"@\U000D" = "send:"; // ⌘+enter
+
 	"c"    = "newMessage:";
 	"/"    = "mailboxSearch:";
 	"j"    = "nextMessage:";
