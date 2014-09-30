@@ -1,5 +1,5 @@
 {
-	name = "Correspondence Arc (bottom)";
+	name = "Correspondence Arc (Widescreen)";
 	rootViewer =
 	{
 		viewerType = "MmSplitView";
