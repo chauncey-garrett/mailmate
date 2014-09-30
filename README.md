@@ -20,7 +20,7 @@ These are fairly self-explanatory if you look through the `plist` files. They sh
 
 	~/Library/Application Support/MailMate/Resources/KeyBindings
 
-NOTE: You may need to make the KeyBindings folder if you don't already have one. See [installation](#installation) below.
+NOTE: You may need to make the KeyBindings folder if you don't already have one. See [Installation](#installation) below.
 
 #### Some comments about `gmail.plist`
 
@@ -52,7 +52,7 @@ Add it to your toolbox; if not, open an [issue!](https://github.com/chauncey-gar
 
 ## Author(s)
 
-I specifically want to thank [Benny Kjær Nielsen](http://freron.com/about/index.html#about_me) for making this repository possible by producing [MailMate](http://freron.com), and for providing excellent customer support for when I have had questions about how to best make these customizations.
+I specifically want to thank [Benny Kjær Nielsen](http://freron.com/about/index.html#about_me) for making this repository possible by producing [MailMate](http://freron.com), and for providing excellent customer support in regard to how to best make these customizations.
 
 *The author(s) of this module should be contacted via the [issue tracker](https://github.com/chauncey-garrett/mailmate/issues "chauncey-garrett/mailmate/issues").*
 
