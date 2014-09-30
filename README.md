@@ -2,7 +2,7 @@
 
 ## Mailbox Layouts
 
-The files [correspondence arc.plist](Layouts/Mailboxes/correspondence arc.plist) and [correspondence arc (widescreen).plist](Layouts/Mailboxes/correspondence arc (widescreen)) combine the *Correspondence* view with the *Thread Arcs* view. **Correspondence Arc** is designed more for a taller, more narrow, view, while **Correspondence Arc (Widescreen)** is designed for more for a widescreen layout. Additionally, in **Correspondence Arc** I hide the Messages sidebar and either use the Gmail shortcuts or ⌘T to access the *Go to Mailbox* feature.
+The files [correspondence arc.plist](Layouts/Mailboxes/correspondence arc.plist) and [correspondence arc (widescreen).plist](Layouts/Mailboxes/correspondence arc (widescreen).plist) combine the *Correspondence* view with the *Thread Arcs* view. **Correspondence Arc** is designed more for a taller, more narrow, view, while **Correspondence Arc (Widescreen)** is designed for more for a widescreen layout. Additionally, in **Correspondence Arc** I hide the Messages sidebar and either use the Gmail shortcuts or ⌘T to access the *Go to Mailbox* feature.
 
 ![Correspondence Arc, with hidden sidebar](delete-me/correspondence-arc.png)
 
@@ -12,9 +12,9 @@ The files [correspondence arc.plist](Layouts/Mailboxes/correspondence arc.plist)
 
 | File | Description |
 | :--- | :--- | :--- |
-| `composer.plist` | Shortcuts for the email composition window |
-| `gmail.plist` | Gmail style shortcuts in the main viewer window |
-| `trackpad-gestures.plist` | Trackpad gestures as outlined in the manual |
+| [composer.plist](Keybindings/composer.plist) | Shortcuts for the email composition window |
+| [gmail.plist](Keybindings/gmail.plist) | Gmail style shortcuts in the main viewer window |
+| [trackpad-gestures.plist](Keybindings/trackpad-gestures.plist) | Trackpad gestures as outlined in the manual |
 
 These are fairly self-explanatory if you look through the `plist` files. They should be placed in
 
@@ -22,7 +22,7 @@ These are fairly self-explanatory if you look through the `plist` files. They sh
 
 NOTE: You may need to make the KeyBindings folder if you don't already have one. See [Installation](#installation) below.
 
-#### Some comments about `gmail.plist`
+#### Some comments about [gmail.plist](Keybindings/gmail.plist)
 
 The keybindings in this file are, for the most part, identical to those included in MailMate. I have, however, included a couple of (IMHO) improvements:
 
