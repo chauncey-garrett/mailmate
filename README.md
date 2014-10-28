@@ -2,11 +2,11 @@
 
 ## Mailbox Layouts
 
-The files [correspondence arc.plist](Layouts/Mailboxes/correspondence arc.plist) and [correspondence arc (widescreen).plist](Layouts/Mailboxes/correspondence arc (widescreen).plist) combine the *Correspondence* view with the *Thread Arcs* view. **Correspondence Arc** is designed more for a taller, more narrow, view, while **Correspondence Arc (Widescreen)** is designed for more for a widescreen layout. Additionally, in **Correspondence Arc** I hide the Messages sidebar and either use the Gmail shortcuts or ⌘T to access the *Go to Mailbox* feature.
+The files [correspondence arcs.plist](Layouts/Mailboxes/correspondence arcs.plist) and [correspondence arcs (widescreen).plist](Layouts/Mailboxes/correspondence arcs (widescreen).plist) combine the *Correspondence* view with the *Thread Arcs* view. **Correspondence Arcs** is designed more for a taller, more narrow, view, while **Correspondence Arcs (Widescreen)** is designed for more for a widescreen layout. Additionally, in **Correspondence Arcs** I hide the Messages sidebar and either use the Gmail shortcuts or ⌘T to access the *Go to Mailbox* feature.
 
-![Correspondence Arc, with hidden sidebar](delete-me/correspondence-arc.png)
+![Correspondence Arcs, with hidden sidebar](delete-me/correspondence-arcs.png)
 
-![Correspondence Arc (Widescreen)](delete-me/correspondence-arc-widescreen.png)
+![Correspondence Arcs (Widescreen)](delete-me/correspondence-arcs-widescreen.png)
 
 ## Keybindings
 
