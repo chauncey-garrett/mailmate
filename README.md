@@ -20,7 +20,7 @@ These are fairly self-explanatory if you look through the `plist` files. They sh
 
 	~/Library/Application Support/MailMate/Resources/KeyBindings
 
-NOTE: You may need to make the KeyBindings folder if you don't already have one. See [Installation](#installation) below.
+NOTE: You may need to make the `KeyBindings` folder if you don't already have one. See [Installation](#installation) below.
 
 #### Some comments about [gmail.plist](Keybindings/gmail.plist)
 
@@ -41,10 +41,22 @@ The keybindings in this file are, for the most part, identical to those included
 
 ## Installation
 
-Mailmate user customizations are stored in `~/Library/Application Support/MailMate/Resources`. If you don't have any customizations, I'll suggest doing this:
+1. Mailmate user customizations are stored in `~/Library/Application Support/MailMate/Resources`. If you don't have any customizations, I'll suggest doing this:
 
-	mkdir -p "$HOME/Library/Application Support/MailMate/Resources"
-	git clone https://github.com/chauncey-garrett/mailmate.git "$HOME/Library/Application Support/MailMate/Resources"
+    ```
+    mkdir -p "$HOME/Library/Application Support/MailMate/Resources"
+    git clone https://github.com/chauncey-garrett/mailmate.git "$HOME/Library/Application Support/MailMate/Resources"
+    ```
+
+2. To set the tags shortcut to `l`, type this in terminal:
+
+    ```
+    defaults write com.freron.MailMate MmTagsPreferencesKeyEquivalentsColumnEnabled -bool YES
+    ```
+
+    relaunch MailMate, then set the shortcut in the preferences pane.
+
+3. MailMate > Preferences... > General > Custom Key Bindings > Enable. Then enter the key bindings that you want to enable in the box below, e.g. `trackpad-gestures,composer,gmail-extended`.
 
 ## Like it?
 
