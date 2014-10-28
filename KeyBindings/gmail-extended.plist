@@ -1,6 +1,6 @@
 {
     /*
-     * Gmail defaults for MailMate
+     * Gmail (extended) defaults for MailMate
      *
      * Based on: http://mail.google.com/support/bin/answer.py?answer=6594
      */
@@ -30,19 +30,22 @@
 	"`"    = "selectNextMailboxRow:";
 	"o"    = "openMessages:";
 	"u"    = ( "goToMailbox:", "INBOX" );
-	"e"    = "archive:";
+	/* "e"    = "archive:"; */
+    "E"    = ("moveThreadToMailbox:", "archive"); /* archive the entire thread */
 	"m"    = "markAsMuted:";
     /* TODO: x = Select conversation */
 	"s"    = "toggleFlag:";
     /* TODO: + = Mark as important */
     /* TODO: - = Mark as unimportant */
 	"!"    = "moveToJunk:";
-	"r"    = "reply:";
+	/* "r"    = "reply:"; */
 	/* "R"    = "reply:"; [> In Gmail, ⇧R will reply in a new window. Kept for consistency. <] */
+	"r"    = ( "reply:", "insertFormatString:", "${to.name.first},\n\n"); /* Smart reply */
 	"a"    = "replyAll:";
 	/* "A"    = "replyAll:"; [> In Gmail, ⇧A will reply all in a new window. Kept for consistency. <] */
 	"f"    = "forwardMessage:";
 	/* "F"    = "forwardMessage:"; [> In Gmail, ⇧F will forward in a new window. Kept for consistency. <] */
+	"@F"   = "forwardAsAttachment:"; /* Added b/c MailMate doesn't yet work well with HTML messages w/o embedded text */
     /* ⎋  = escape from the input field; native in MailMate */
 	"@s"   = "saveDocument:";
 	"#"    = "deleteMessage:";
@@ -55,6 +58,7 @@
     /* TODO: { = archive and go to previous */
     /* TODO: } = archive and go to next */
 	"z"	   = "undo:";
+	"Z"	= "redo:";
     /* ⇧N = update current conversation. i.e., synchronize mailboxes */
 	"y"    = "archive:";
     /* y should: archive from inbox, unflag from flagged, move to inbox from trash, remove label from any label but this is not feasible in MailMate. */
@@ -68,10 +72,13 @@
 		"s" = ( "goToMailbox:", "FLAGGED" );
 		/* TODO: g then c = Go to 'Contacts' takes you to your Contacts list. */
 		"d" = ( "goToMailbox:", "DRAFTS" );
+		"g" = "selectFirstMessageRow:"; /* gg, like in Vim */
 		"l" = "goToMailbox:";
 		"i" = ( "goToMailbox:", "INBOX" );
 		"t" = ( "goToMailbox:", "SENT" );
+		"u" = ( "goToMailbox:", "0CE5FC71-F7DC-4D08-842D-0556FA57CDB9" ); /* Goto smart mailbox, Unread. Obtain the UUID from  ~/Library/Application Support/MailMate/Mailboxes.plist */
 	};
+	"G" = "selectLastMessageRow:"; /* G, like in Vim */
 
 	"*" = {
 		"a" = "selectAll:";                                            /* Selects all */
@@ -81,6 +88,8 @@
 		"s" = ( "selectWithFilter:", "#flags.flag = '\\Flagged'" );     /* Selects all starred mail. */
 		"t" = ( "selectWithFilter:", "#flags.flag !=[x] '\\Flagged'" ); /* Selects all unstarred mail. */
 	};
+	"N"	= "moveDownAndModifySelection:";
+	"P"	= "moveUpAndModifySelection:";
 
 	/*
      * Composing
@@ -93,5 +102,4 @@
     /* ⌘⇧c = add cc recipients */
     /* ⌘⇧b = add bcc recipients */
     /* ⌘⇧f = change from address */
-
 }

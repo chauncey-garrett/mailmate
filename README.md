@@ -8,12 +8,13 @@ The files [correspondence arcs.plist](Layouts/Mailboxes/correspondence arcs.plis
 
 ![Correspondence Arcs (Widescreen)](delete-me/correspondence-arcs-widescreen.png)
 
-## Keybindings
+## Key bindings
 
 | File | Description |
 | :--- | :--- | :--- |
 | [composer.plist](Keybindings/composer.plist) | Shortcuts for the email composition window |
 | [gmail.plist](Keybindings/gmail.plist) | Gmail style shortcuts in the main viewer window |
+| [gmail-extended.plist](Keybindings/gmail-extended.plist) | **Custom** Gmail style shortcuts in the main viewer window |
 | [trackpad-gestures.plist](Keybindings/trackpad-gestures.plist) | Trackpad gestures as outlined in the manual |
 
 These are fairly self-explanatory if you look through the `plist` files. They should be placed in
@@ -22,22 +23,23 @@ These are fairly self-explanatory if you look through the `plist` files. They sh
 
 NOTE: You may need to make the `KeyBindings` folder if you don't already have one. See [Installation](#installation) below.
 
-#### Some comments about [gmail.plist](Keybindings/gmail.plist)
+#### Some comments about [gmail.plist](Keybindings/gmail.plist) and [gmail-extended.plist](Keybindings/gmail-extended.plist)
 
-The keybindings in this file are, for the most part, identical to those included in MailMate. I have, however, included a couple of (IMHO) improvements:
+The key bindings in [gmail.plist](Keybindings/gmail.plist) **are written to provide parity with Gmail,** to the extent that is feasible in MailMate. These go beyond what has already been done with the Gmail key bindings included in MailMate. A table of feature parity may be found in the file [gmail.md](delete-me/gmail.md).
+
+I have additionally included a couple of (IMHO) improvements to the standard version, which are in [gmail-extended.plist](Keybindings/gmail-extended.plist):
 
 | Shortcut | Description
 | :---:    | :---
-| j/k      | move between all messages (instead of threads)
-| n/p      | move between mailboxes (which I find more useful)
+| gu       | go to smart mailbox, Unread
 | gg       | move to the top of the list (Vim-style)
 | ⇧G       | move to the bottom (Vim-style)
-| /        | search all messages
-| u        | go to the inbox
-| #        | delete the current message
+| r        | reply to message and insert salutation in message
 | ⌘⇧F      | forward message as an attachment
 | ⇧E       | archive all messages in the current thread
-| ⌘↩       | send message
+| Z        | redo
+| N        | select next message for modification
+| P        | select previous message for modification
 
 ## Installation
 
