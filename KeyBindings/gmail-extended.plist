@@ -24,8 +24,8 @@
 	"/"    = "searchAllMessages:";
 	"k"    = "previousThread:";
 	"j"    = "nextThread:";
-	"n"    = "previousMessage:";
-	"p"    = "nextMessage:";
+	"p"    = "previousMessage:";
+	"n"    = "nextMessage:";
 	"~"    = "selectPreviousMailboxRow:";
 	"`"    = "selectNextMailboxRow:";
 	"o"    = "openMessages:";
