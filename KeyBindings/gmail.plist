@@ -56,7 +56,7 @@
     /* TODO: } = archive and go to next */
 	"z"	   = "undo:";
     /* ⇧N = update current conversation. i.e., synchronize mailboxes */
-	"y"    = "archive:";
+	/* "y"    = "archive:"; */
     /* y should: archive from inbox, unflag from flagged, move to inbox from trash, remove label from any label but this is not feasible in MailMate. */
 
 	/*

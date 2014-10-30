@@ -30,7 +30,7 @@
 	"`"    = "selectNextMailboxRow:";
 	"o"    = "openMessages:";
 	"u"    = ( "goToMailbox:", "INBOX" );
-	/* "e"    = "archive:"; */
+	"e"    = "archive:";
     "E"    = ("moveThreadToMailbox:", "archive"); /* archive the entire thread */
 	"m"    = "markAsMuted:";
     /* TODO: x = Select conversation */
@@ -60,7 +60,7 @@
 	"z"	   = "undo:";
 	"Z"	= "redo:";
     /* ⇧N = update current conversation. i.e., synchronize mailboxes */
-	"y"    = "archive:";
+	/* "y"    = "archive:"; */
     /* y should: archive from inbox, unflag from flagged, move to inbox from trash, remove label from any label but this is not feasible in MailMate. */
 
 	/*
