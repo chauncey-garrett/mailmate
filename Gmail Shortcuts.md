@@ -2,14 +2,16 @@
 
 Based on the shortcuts list at https://support.google.com/mail/answer/6594.
 
-| Legend        |                                                              |
+## Legend
+
 | Mark          | Description                                                  |
 | :-----------: | :-----------                                                 |
 | ✓             | Available                                                    |
 | ✘             | No plan to implement or not currently applicable to MailMate |
 | *blank*       | Not yet implemented                                          |
 
-| Single-keys ||||
+## Single-keys
+
 | Shortcut Key | Action | Description | Available? |
 | :------------: | :----------- | :----------- | :-----------: |
 | c | Compose | Allows you to compose a new message.  | ✓ |
@@ -55,11 +57,12 @@ Based on the shortcuts list at https://support.google.com/mail/answer/6594.
 | | | * 'y' has no effect if you're in 'Spam,' 'Sent,' or 'All Mail.'  | ✘ |
 | . | Show more actions | Displays the 'More Actions' drop-down menu.  | ✘ |
 | , | Moves cursor to the first button in your Gmail toolbar | Displays the 'More Actions' drop-down menu.  | ✘ |
-| ⌘ + Down arrow | Opens options in Chat | ⌘ + Down arrow moves from edit field in your chat window to select the 'Video and more' menu  |  ✘|
+| ⌘ + Down arrow | Opens options in Chat | ⌘ + Down arrow moves from edit field in your chat window to select the 'Video and more' menu  | ✘ |
 | | |  Next, press ⇥ to select the emoticon menu  | ✘ |
 | | |  Press ↩ to open the selected menu  | ✘ |
 
-| Combo-keys  ||||
+## Combo-keys
+
 | Shortcut Key | Action | Description | Available? |
 | :------------: | :----------- | :----------- | :-----------: |
 | ⇥ then ↩ | Send message | After composing your message, use this combination to send it.  | ✘ |
@@ -78,7 +81,8 @@ Based on the shortcuts list at https://support.google.com/mail/answer/6594.
 | * then s | Select starred | Selects all starred mail.  | ✓ |
 | * then t | Select unstarred | Selects all unstarred mail. | ✓ |
 
-| Composing ||||
+## Composing
+
 | Shortcut Key | Action | Description | Available? |
 | :------------: | :----------- | :----------- | :-----------: |
 | ⌘ + ↩ | Send message | After composing your message, use this combination to send it.  | ✓ |

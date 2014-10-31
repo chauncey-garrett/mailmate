@@ -25,7 +25,7 @@ NOTE: You may need to make the `KeyBindings` folder if you don't already have on
 
 #### Some comments about [gmail.plist](Keybindings/gmail.plist) and [gmail-extended.plist](Keybindings/gmail-extended.plist)
 
-The key bindings in [gmail.plist](Keybindings/gmail.plist) **are written to provide parity with Gmail,** to the extent that is feasible in MailMate. These go beyond what has already been done with the Gmail key bindings included in MailMate. A table of feature parity may be found in the file [gmail.md](delete-me/gmail.md).
+The key bindings in [gmail.plist](Keybindings/gmail.plist) **are written to provide parity with Gmail,** to the extent that is feasible in MailMate. These go beyond what has already been done with the Gmail key bindings included in MailMate. A table of feature parity may be found in the file [Gmail Shortcuts.md](Gmail Shortcuts.md).
 
 I have additionally included a couple of (IMHO) improvements to the standard version, which are in [gmail-extended.plist](Keybindings/gmail-extended.plist):
 
