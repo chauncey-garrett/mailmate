@@ -10,12 +10,12 @@ The files [correspondence arcs.plist](Layouts/Mailboxes/correspondence arcs.plis
 
 ## Key bindings
 
-| File | Description |
-| :--- | :--- | :--- |
-| [composer.plist](Keybindings/composer.plist) | Shortcuts for the email composition window |
-| [gmail.plist](Keybindings/gmail.plist) | Gmail style shortcuts in the main viewer window |
-| [gmail-extended.plist](Keybindings/gmail-extended.plist) | **Custom** Gmail style shortcuts in the main viewer window |
-| [trackpad-gestures.plist](Keybindings/trackpad-gestures.plist) | Trackpad gestures as outlined in the manual |
+| File                                                           | Description
+| :---                                                           | :---
+| [composer.plist](Keybindings/composer.plist)                   | Shortcuts for the email composition window
+| [gmail.plist](Keybindings/gmail.plist)                         | Gmail style shortcuts in the main viewer window
+| [gmail-extended.plist](Keybindings/gmail-extended.plist)       | **Custom** Gmail style shortcuts in the main viewer window
+| [trackpad-gestures.plist](Keybindings/trackpad-gestures.plist) | Trackpad gestures as outlined in the manual
 
 These are fairly self-explanatory if you look through the `plist` files. They should be placed in
 
