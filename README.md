@@ -71,3 +71,5 @@ I specifically want to thank [Benny Kjær Nielsen](http://freron.com/about/index
 *The author(s) of this module should be contacted via the [issue tracker](https://github.com/chauncey-garrett/mailmate/issues "chauncey-garrett/mailmate/issues").*
 
   - [Chauncey Garrett](https://github.com/chauncey-garrett "chauncey-garrett")
+
+[![](/delete-me/donate.png)](http://chauncey.io/about/index.html#donate)
