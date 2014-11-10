@@ -72,4 +72,4 @@ I specifically want to thank [Benny Kjær Nielsen](http://freron.com/about/index
 
   - [Chauncey Garrett](https://github.com/chauncey-garrett "chauncey-garrett")
 
-[![](/img/donate.png)](http://chauncey.io/about/index.html#donate)
+[![](/img/tip.gif)](http://chauncey.io/about/index.html#tip)
