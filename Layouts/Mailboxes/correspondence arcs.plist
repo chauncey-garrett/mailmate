@@ -129,7 +129,7 @@
 							},
 						);
 					},
-										{
+					{
 						// Bottom of main view
 						// Split the main window horizontally to separate messages from message list
 						viewerType = "MmSplitView";
