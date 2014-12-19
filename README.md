@@ -1,4 +1,10 @@
-# MailMate Customizations
+---
+layout: page
+title: "MailMate Customizations"
+comments: false
+sharing: true
+footer: true
+---
 
 ## Mailbox Layouts
 
@@ -45,14 +51,14 @@ I have additionally included a couple of (IMHO) improvements to the standard ver
 
 1. Mailmate user customizations are stored in `~/Library/Application Support/MailMate/Resources`. If you don't have any customizations, I'll suggest doing this:
 
-    ```
+    ```sh
     mkdir -p "$HOME/Library/Application Support/MailMate/Resources"
     git clone https://github.com/chauncey-garrett/mailmate.git "$HOME/Library/Application Support/MailMate/Resources"
     ```
 
 2. To set the tags shortcut to `l`, type this in terminal:
 
-    ```
+    ```sh
     defaults write com.freron.MailMate MmTagsPreferencesKeyEquivalentsColumnEnabled -bool YES
     ```
 
