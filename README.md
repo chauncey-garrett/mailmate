@@ -30,20 +30,20 @@ footer: true
 
 ## Mailbox Layouts
 
-The files [correspondence-arcs.plist](Layouts/Mailboxes/correspondence-arcs.plist) and [correspondence-arcs-widescreen.plist](Layouts/Mailboxes/correspondence-arcs-widescreen.plist) combine the *Correspondence* view with the *Thread Arcs* view. **Correspondence Arcs** is designed more for a taller, more narrow, view, while **Correspondence Arcs (Widescreen)** is designed for more for a widescreen layout. Additionally, in **Correspondence Arcs** I often hide the Messages sidebar and either use the Gmail shortcuts or ⌘T to access the *Go to Mailbox* feature.
+The files [correspondence-arcs.plist]({{page.url}}Layouts/Mailboxes/correspondence-arcs.plist) and [correspondence-arcs-widescreen.plist]({{page.url}}Layouts/Mailboxes/correspondence-arcs-widescreen.plist) combine the *Correspondence* view with the *Thread Arcs* view. **Correspondence Arcs** is designed more for a taller, more narrow, view, while **Correspondence Arcs (Widescreen)** is designed for more for a widescreen layout. Additionally, in **Correspondence Arcs** I often hide the Messages sidebar and either use the Gmail shortcuts or ⌘T to access the *Go to Mailbox* feature.
 
-![Correspondence Arcs, with hidden sidebar](img/correspondence-arcs.png)
+![Correspondence Arcs, with hidden sidebar]({{page.url}}img/correspondence-arcs.png)
 
-![Correspondence Arcs (Widescreen)](img/correspondence-arcs-widescreen.png)
+![Correspondence Arcs (Widescreen)]({{page.url}}img/correspondence-arcs-widescreen.png)
 
 ## Key bindings
 
 | File                                                           | Description
 | :---                                                           | :---
-| [composer.plist](Keybindings/composer.plist)                   | Shortcuts for the email composition window
-| [gmail.plist](Keybindings/gmail.plist)                         | Gmail style shortcuts in the main viewer window
-| [gmail-extended.plist](Keybindings/gmail-extended.plist)       | **Custom** Gmail style shortcuts in the main viewer window
-| [trackpad-gestures.plist](Keybindings/trackpad-gestures.plist) | Trackpad gestures as outlined in the manual
+| [composer.plist]({{page.url}}KeyBindings/composer.plist)                   | Shortcuts for the email composition window
+| [gmail.plist]({{page.url}}KeyBindings/gmail.plist)                         | Gmail style shortcuts in the main viewer window
+| [gmail-extended.plist]({{page.url}}KeyBindings/gmail-extended.plist)       | **Custom** Gmail style shortcuts in the main viewer window
+| [trackpad-gestures.plist]({{page.url}}KeyBindings/trackpad-gestures.plist) | Trackpad gestures as outlined in the manual
 
 These are fairly self-explanatory if you look through the `plist` files. They should be placed in
 
@@ -55,9 +55,9 @@ NOTE: You may need to make the `KeyBindings` folder if you don't already have on
 
 ### Gmail Keybindings
 
-The key bindings in [gmail.plist](Keybindings/gmail.plist) **are written to provide parity with Gmail,** to the extent that is feasible in MailMate. These go beyond what has already been done with the Gmail key bindings included in MailMate. A table of feature parity may be found in the file [Gmail Shortcuts.md](Gmail Shortcuts.md).
+The key bindings in [gmail.plist]({{page.url}}KeyBindings/gmail.plist) **are written to provide parity with Gmail,** to the extent that is feasible in MailMate. These go beyond what has already been done with the Gmail key bindings included in MailMate. A table of feature parity may be found in the file [Gmail Shortcuts.md]({{page.url}}Gmail Shortcuts.md).
 
-I have additionally included a couple of (IMHO) improvements to the standard version, which are in [gmail-extended.plist](Keybindings/gmail-extended.plist):
+I have additionally included a couple of (IMHO) improvements to the standard version, which are in [gmail-extended.plist]({{page.url}}KeyBindings/gmail-extended.plist):
 
 | Shortcut | Description
 | :---:    | :---
@@ -100,4 +100,4 @@ I specifically want to thank [Benny Kjær Nielsen](http://freron.com/about/index
 
   - [Chauncey Garrett](https://github.com/chauncey-garrett "chauncey-garrett")
 
-[![](/img/tip.gif)](http://chauncey.io/about/index.html#tip)
+[![]({{page.url}}img/tip.gif)](http://chauncey.io/reader-support/)
