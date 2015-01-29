@@ -12,22 +12,24 @@ The files [correspondence-arcs.plist](Layouts/Mailboxes/correspondence-arcs.plis
 
 | File                                                           | Description
 | :---                                                           | :---
-| [composer.plist](Keybindings/composer.plist)                   | Shortcuts for the email composition window
-| [gmail.plist](Keybindings/gmail.plist)                         | Gmail style shortcuts in the main viewer window
-| [gmail-extended.plist](Keybindings/gmail-extended.plist)       | **Custom** Gmail style shortcuts in the main viewer window
-| [trackpad-gestures.plist](Keybindings/trackpad-gestures.plist) | Trackpad gestures as outlined in the manual
+| [composer.plist](KeyBindings/composer.plist)                   | Shortcuts for the email composition window
+| [gmail.plist](KeyBindings/gmail.plist)                         | Gmail style shortcuts in the main viewer window
+| [gmail-extended.plist](KeyBindings/gmail-extended.plist)       | **Custom** Gmail style shortcuts in the main viewer window
+| [trackpad-gestures.plist](KeyBindings/trackpad-gestures.plist) | Trackpad gestures as outlined in the manual
 
 These are fairly self-explanatory if you look through the `plist` files. They should be placed in
 
-	~/Library/Application Support/MailMate/Resources/KeyBindings
+```sh
+~/Library/Application Support/MailMate/Resources/KeyBindings
+```
 
 NOTE: You may need to make the `KeyBindings` folder if you don't already have one. See [Installation](#installation) below.
 
-#### Some comments about [gmail.plist](Keybindings/gmail.plist) and [gmail-extended.plist](Keybindings/gmail-extended.plist)
+### Gmail Keybindings
 
-The key bindings in [gmail.plist](Keybindings/gmail.plist) **are written to provide parity with Gmail,** to the extent that is feasible in MailMate. These go beyond what has already been done with the Gmail key bindings included in MailMate. A table of feature parity may be found in the file [Gmail Shortcuts.md](Gmail Shortcuts.md).
+The key bindings in [gmail.plist](KeyBindings/gmail.plist) **are written to provide parity with Gmail,** to the extent that is feasible in MailMate. These go beyond what has already been done with the Gmail key bindings included in MailMate. A table of feature parity may be found in the file [Gmail Shortcuts.md](Gmail Shortcuts.md).
 
-I have additionally included a couple of (IMHO) improvements to the standard version, which are in [gmail-extended.plist](Keybindings/gmail-extended.plist):
+I have additionally included a couple of (IMHO) improvements to the standard version, which are in [gmail-extended.plist](KeyBindings/gmail-extended.plist):
 
 | Shortcut | Description
 | :---:    | :---
@@ -43,22 +45,20 @@ I have additionally included a couple of (IMHO) improvements to the standard ver
 
 ## Installation
 
-1. Mailmate user customizations are stored in `~/Library/Application Support/MailMate/Resources`. If you don't have any customizations, I'll suggest doing this:
+Mailmate user customizations are stored in `~/Library/Application Support/MailMate/Resources`. If you don't have any customizations, I'll suggest doing this:
 
-    ```
-    mkdir -p "$HOME/Library/Application Support/MailMate/Resources"
-    git clone https://github.com/chauncey-garrett/mailmate.git "$HOME/Library/Application Support/MailMate/Resources"
-    ```
+```sh
+mkdir -p "$HOME/Library/Application Support/MailMate/Resources"
+git clone https://github.com/chauncey-garrett/mailmate.git "$HOME/Library/Application Support/MailMate/Resources"
+```
 
-2. To set the tags shortcut to `l`, type this in terminal:
+To set the tags shortcut to `l`, type this in terminal:
 
-    ```
-    defaults write com.freron.MailMate MmTagsPreferencesKeyEquivalentsColumnEnabled -bool YES
-    ```
+```sh
+defaults write com.freron.MailMate MmTagsPreferencesKeyEquivalentsColumnEnabled -bool YES
+```
 
-    relaunch MailMate, then set the shortcut in the preferences pane.
-
-3. MailMate > Preferences... > General > Custom Key Bindings > Enable. Then enter the key bindings that you want to enable in the box below, e.g. `trackpad-gestures,composer,gmail-extended`.
+Now, relaunch MailMate and set the shortcut in the preferences pane (MailMate > Preferences... > General > Custom Key Bindings > Enable). Enable the key bindings that you want by entering them in the box below, e.g. `trackpad-gestures,composer,gmail-extended`.
 
 ## Like it?
 
@@ -72,4 +72,5 @@ I specifically want to thank [Benny Kjær Nielsen](http://freron.com/about/index
 
   - [Chauncey Garrett](https://github.com/chauncey-garrett "chauncey-garrett")
 
-[![](/img/tip.gif)](http://chauncey.io/about/index.html#tip)
+[![](/img/tip.gif)](http://chauncey.io/reader-support/)
+
